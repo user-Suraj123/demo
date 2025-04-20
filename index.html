@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is demo</h1>
+    <button on click="document.querySelector('h1').innerHTMl='Hello' ">Change text</button>
+    <hr>
+
+    <img class="a" src="c:\Users\HP\Desktop\daylight-environment-forest-459225.jpg".jpg alt="" width="100">
+    <button onclick="document.querySelector('.a').src='c:\Users\HP\Desktop\Untitled.jpeg'">Next</button>
+    <hr>
+
+    <input type="password" name="" class="b">
+    <button onclick="abc()" class="e">Show password</button>
+
+    <script>
+        function abc(){
+            if (document.querySelector('.b').type=='password')
+        {
+            document.querySelector('.b').type='text';
+            document.querySelector('.e').type='hide'
+        }
+        else
+        {
+            document.querySelector('.b').type='password'
+            document.querySelector('.e').type='show'
+        }
+        }
+    </script>
+
+
+</body>
+</html>

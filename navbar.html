@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar1, .bar2, .bar3{width: 20px; height: 3px; background: black; margin: 2px 0; transition: 0.9s;}
+        .h{margin-left:200px}
+        .h .bar2{opacity:0;}
+        .h .bar1{transform: rotate(45deg) translate(10px,2px);}
+        .h .bar3{transform: rotate(-45deg) translate(5px,2px);}
+        aside{width: 200px; height: 100vh; background: red; position: fixed; left: -200px; top: 0; transition: 0.9s;}
+        .hh{ left: 0;}
+        .con{ transition: 0.9s;}
+
+    </style>
+</head>
+<body>
+    <div class="con" onclick="cc()">
+        <div class="bar1"></div> <div class="bar2"></div> <div class="bar3"></div>
+    </div>
+    <aside></aside>
+    <script>
+        function cc() {
+            document.querySelector('.con').classList.toggle('h')
+            document.querySelector('aside').classList.toggle('hh')
+        }
+    </script>
+    
+</body>
+</html>

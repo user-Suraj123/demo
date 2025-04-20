@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .red {
+                background: yellow;
+                color: brown;
+                font-size: 88px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is demo</h1>
+        <button on click="document.querySelector('h1').style.color='red'">color</button>
+        <button on click="document.querySelector('h1').style.background='orange'">BG</button>
+        <button on click="document.querySelector('h1').style.marginLeft='180px'">ML</button>
+        <button on click="document.querySelector('h1').style.marginLeft='none'">Hide</button>
+        <button on click="document.querySelector('h1').style.display='block'">show</button>
+        <button on click="document.querySelector('h1').style.display='add('red')'">add</button>
+    </body>
+
+</html>
